@@ -8,3 +8,12 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function changeColor() {
+  document.getElementById("box-button").style.backgroundColor = "green";
+}
+
+
+function changeColor2() {
+  document.getElementById("box-button2").style.backgroundColor = "green";
+}

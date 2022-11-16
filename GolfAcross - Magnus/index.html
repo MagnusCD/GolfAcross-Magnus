@@ -10,9 +10,22 @@
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/5e2cb9f1be.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
+
+<script>  $(function() {
+    $("#confirm-button").click(function() {
+      $('#invisible').toggleClass("show");
+    });
+  });
+</script>
+
+
+
+
 
 
 
@@ -28,9 +41,50 @@
     <button class="topnav-button5"><a href="">Login/opret bruger</button></a>
     <!--Kilde: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars"></i></a>
   </div>
 </div>
+
+
+
+<center><h1 class="h1-book-tid" style="margin-top: 80px;"">Book tid</h1></center></style>
+
+<section class="book-tid-grid-container">
+  <center><div class="box one">
+    <h2>Tider</h2>
+    <button id="box-button" onclick="changeColor()">9:00</button>
+    <button id="box-button2" onclick="changeColor2()">9:00</button>
+    <button id="box-button" onclick="changeColor3()">9:00</button>
+    <button id="box-button" onclick="changeColor4()">9:00</button>
+    <button id="box-button" onclick="changeColor5()">9:00</button>
+    <button id="box-button" onclick="changeColor6()">9:00</button>
+    <button id="box-button" onclick="changeColor7()">9:00</button>
+    <button id="box-button" onclick="changeColor8()">9:00</button>
+    <button id="box-button" onclick="changeColor9()">9:00</button>
+    <button id="box-button" onclick="changeColor10()">9:00</button>
+  </div></center>
+
+  <center><div class="box two">
+    <h2>Grupper</h2>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+    <button id="box-button">9:00</button>
+  </div></center>
+</section>
+
+<center><button id="confirm-button">Bekræft booking</button></center>
+
+<center><p id="invisible" class="hide">Booking bekræftet!</p></center>
+
+</body>
+</html>
 
 
 
