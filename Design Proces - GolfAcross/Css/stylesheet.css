@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+/*Baggrund, logo og knapper*/
+.topnav-container {
+  position: fixed;
+  margin-top: 0;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+  /*Logo*/
+  .topnav-container .topnav-logo {
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    top: 30%;
+    left: 6%;
+  }
+
+/*Navbar-knapper enkeltvis*/
+.topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
+margin-left: 2%;
+width: 125px;
+color: white;
+border-radius: 40px;
+border-color: rgba(255, 255, 255, 0);
+cursor: pointer;
+background-color:rgba(255, 255, 255, 0); 
+font-size: 15px;
+}
+
+ /*Baggrund*/
+ .topnav-container .topnav-background{
+  width: 100%;
+  height: 140px;
+  }  
+
+  /*Navbar-knapper*/
+  .topnav {
+    position: absolute;
+    display: flex;
+    top: 60%;
+    right: 1%;
+  }
+
+.topnav-button1:hover, .topnav-button2:hover, .topnav-button3:hover, .topnav-button4:hover, .topnav-button5:hover {
+background-color: #6c992e;
+}
+
+.topnav a:link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.topnav a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.topnav-logo:hover{
+  opacity: 0.8
+}
+
+/*Kilde: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+/* Hide the link that should open and close the topnav on small screens */
+.topnav a.icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1000px) {
+  .topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
+  display: none;
+}
+.topnav-container .icon {
+display: block;
+position: absolute;
+top: 40%;
+right: 5%;
+color: white;
+}
+}
+
+@keyframes growDown {
+  0% {
+      transform: scaleY(0)
+  }
+  80% {
+      transform: scaleY(1.1)
+  }
+  100% {
+      transform: scaleY(1)
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+  position: absolute;
+  top: 95%;
+  height: 175px;
+  width: 100%;
+  margin-right: -13px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+  align-items: center;
+  z-index: -1; 
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+.topnav.responsive .topnav-button1 {
+  display: block;
+  margin-bottom: 10px;
+}
+.topnav.responsive .topnav-button2 {
+  display: block;
+  margin-bottom: 10px;
+}
+.topnav.responsive .topnav-button3 {
+  display: block;
+  margin-bottom: 10px;
+}
+.topnav.responsive .topnav-button4 {
+  display: block;
+  margin-bottom: 10px;
+}
+.topnav.responsive .topnav-button5 {
+ display: block;
+}
+}
+
+
+@media screen and (max-width: 1000px) {
+  #apple {
+  margin-left: auto;
+  margin-right: 150px;
+  }  
+  }

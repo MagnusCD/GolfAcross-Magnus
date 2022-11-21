@@ -1,0 +1,501 @@
+/* Initalisering af responsive design */
+/* Kodet af Yasmin*/
+
+* {
+    box-sizing: border-box; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ .row::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+ 
+ [class*="col-"] {
+     float: left;
+     padding: 15px;
+ }
+
+ /*Header*/
+ body {
+    margin: 0;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 100vh;
+}
+  
+  /*Baggrund, logo og knapper*/
+  .topnav-container {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+  }
+  
+  /*Logo*/
+  .topnav-container .topnav-logo {
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    top: 30%;
+    left: 6%;
+  }
+  
+  /*Navbar-knapper enkeltvis*/
+  .topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
+  margin-left: 2%;
+  width: 125px;
+  color: white;
+  border-radius: 40px;
+  border-color: rgba(201, 21, 21, 0);
+  cursor: pointer;
+  background-color:rgba(255, 255, 255, 0); 
+  font-size: 15px;
+  }
+  
+  /*Baggrund*/
+  .topnav-container .topnav-background{
+  width: 100%;
+  height: 140px;
+  }  
+  
+  /*Navbar-knapper*/
+  .topnav {
+    position: absolute;
+    display: flex;
+    top: 60%;
+    right: 1%;
+  }
+  
+  .topnav-button1:hover, .topnav-button2:hover, .topnav-button3:hover, .topnav-button4:hover, .topnav-button5:hover {
+  background-color: #6c992e;
+  }
+  
+  .topnav a:link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .topnav a:visited{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .topnav-logo:hover{
+    opacity: 0.8
+  }
+  
+  /*Kilde: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav a.icon {
+    display: none;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 1000px) {
+      .topnav-button1, .topnav-button2, .topnav-button3, .topnav-button4, .topnav-button5 {
+      display: none;
+    }
+    .topnav a.icon {
+      display: block;
+    }
+    }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1000px) {
+      .topnav.responsive {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+    }
+    .topnav.responsive .topnav-button1 {
+      display: block;
+      text-align: center;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .topnav.responsive .topnav-button2 {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .topnav.responsive .topnav-button3 {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .topnav.responsive .topnav-button4 {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .topnav.responsive .topnav-button5 {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+ 
+ /* Inistalisering af responsive design slut */
+ 
+ /* For mobile phones */
+ 
+ [class*="col-"] {
+     width: 100%; 
+ }
+ 
+ @media only screen and (min-width: 600px) {
+     .col-s-1 {width: 8.33%;}
+     .col-s-2 {width: 16.66%;}
+     .col-s-3 {width: 25%;}
+     .col-s-4 {width: 33.33%;}
+     .col-s-5 {width: 41.66%;}
+     .col-s-6 {width: 50%;}
+     .col-s-7 {width: 58.33%;}
+     .col-s-8 {width: 66.66%;}
+     .col-s-9 {width: 75%;}
+     .col-s-10 {width: 83.33%;}
+     .col-s-11 {width: 91.66%;}
+     .col-s-12 {width: 100%;}
+ }
+
+ /* For desktop */
+ 
+ @media only screen and (min-width: 768px) {
+     .col-1 {width: 8.33%;}
+     .col-2 {width: 16.66%;}
+     .col-3 {width: 25%;}
+     .col-4 {width: 33.33%;}
+     .col-5 {width: 41.66%;}
+     .col-6 {width: 50%;}
+     .col-7 {width: 58.33%;}
+     .col-8 {width: 66.66%;}
+     .col-9 {width: 75%;}
+     .col-10 {width: 83.33%;}
+     .col-11 {width: 91.66%;}
+     .col-12 {width: 100%;}
+ }
+
+body{
+margin: 0;
+padding: 0;
+}
+
+.profileimage {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.flag {
+    width: 45px;
+    margin-left: 75px;
+    margin-top: 13px;
+}
+
+.flagtext {
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: -10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400px;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.knap {
+    width: 100px;
+    height: 102px;
+    margin-left: 70px;
+    margin-top: 25px;
+}
+
+.grey {
+    background-color: grey;
+}
+
+
+table {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+    width: 65%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.table {
+    padding-top: 200px;
+    width: 73%;
+    margin-left: 580px;
+    
+}
+
+.table h4 {
+    color: #ffffff;
+    background-color: grey;
+    width: 600px;
+    padding: 6px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-right: 200%;
+    margin-left: 40px;
+    font-weight: 350;
+}
+
+tr, td {
+    padding: 20px;
+    font-size: 18px;
+    font-weight:400;
+    width: 10%;
+    
+}
+
+.number {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.procent {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.letter {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.section3 {
+    width: 50%;
+    margin-left: 630px;
+    margin-top: -180px;
+}
+
+.section3 h4 {
+    color: #ffffff;
+    background-color: grey;
+    width: 600px;
+    padding: 4px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-weight: 350;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    width: 86%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.rows p {
+    background-color: #306789;
+    padding: 35px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 19px;
+    height: 150px;
+    font-weight: 300;
+}
+
+.section4 {
+    width: 50%;
+    margin-left: 630px;
+    margin-top: 50px;
+}
+
+.section4 h4 {
+    color: #ffffff;
+    background-color: grey;
+    width: 620px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-weight: 350;
+}
+
+.body1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff; 
+}
+
+.wrapper {
+    width: 595px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    margin-left: 630px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 20px;
+    color: #4E4E4E;
+    font-size: 1.9rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    background: #F2F2F2;
+}
+
+header .icons span:hover {
+background: #306789;
+color: #ffffff;
+}
+
+.kalender {
+    padding: 20px;
+}
+
+.kalender ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.kalender .days {
+    margin-bottom: 40px;
+}
+
+.kalender .days li {
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+
+.kalender .weeks li {
+font-weight: 500;
+
+}
+
+.kalender ul li {
+    position: relative;
+    width: calc(100% / 7);
+    text-align: left;
+}
+
+.kalender .days li::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: #F2F2F2;
+    border-radius: 50%;
+    z-index: -1;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%)
+
+}
+
+.days li:hover:before {
+    background: #b1afaf;
+}
+
+
+
+.footer {
+    width: 100%;
+    background-color: #6B9704;
+    color: white;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .footer a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    padding:3px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.socials {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    margin-top: 35px;
+}
+
+#apple {
+    max-width: 150px;
+    display: flex;
+    float: right;
+    margin-top: 12px;
+    margin-right: -90px;
+}
+
+.kontakttext {
+    margin-left: 10px;
+}
+
+.section-one {
+    margin-left: 170px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #apple {
+    margin-left: auto;
+    margin-right: 150px;
+}  
+ }
+

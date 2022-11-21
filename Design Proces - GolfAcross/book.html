@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book tid</title>
+  <link rel="stylesheet" href="Css/book.css">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/5e2cb9f1be.js" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<script>  $(function() {
+    $("#confirm-button").click(function() {
+      $('#invisible').toggleClass("show");
+    });
+  });
+</script>
+
+<!--Kilde: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  
+<div class="topnav-container">
+  <img class="topnav-background" src="Images/topnav-background.png">
+  <a href="index.html"> <image class="topnav-logo" src="Images/topnav-logo.png"></image></a>        
+
+
+  <div class="topnav" id="myTopnav">
+    <button class="topnav-button1"><a href="minprofil.html">Min profil</button></a>
+    <button class="topnav-button2"><a href="book.html">Book tid</button></a>
+    <button class="topnav-button3"><a href="kobogsalg.html">Golf Genbrug</button></a>
+    <button class="topnav-button4"><a href="Omos.html">Om os</button></a>
+    <button class="topnav-button5"><a href="">Login/opret bruger</button></a>
+  </div>
+  <!--Kilde: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i></a>
+</div>
+    
+
+
+
+<center><h1 class="h1-book-tid">Book tid</h1></center></style>
+
+<section class="book-tid-grid-container">
+  <center><div class="box one">
+    <h2>Tider</h2>
+    <button id="box-button" onclick="changeColor()">9:00</button>
+    <button id="box-button2" onclick="changeColor2()">10:00</button>
+    <button id="box-button3" onclick="changeColor3()">11:00</button>
+    <button id="box-button4" onclick="changeColor4()">12:00</button>
+    <button id="box-button5" onclick="changeColor5()">13:00</button>
+    <button id="box-button6" onclick="changeColor6()">14:00</button>
+    <button id="box-button7" onclick="changeColor7()">15:00</button>
+    <button id="box-button8" onclick="changeColor8()">16:00</button>
+    <button id="box-button9" onclick="changeColor9()">17:00</button>
+    <button id="box-button10" onclick="changeColor10()">18:00</button>
+  </div></center>
+
+  <center><div class="box two">
+    <h2>Grupper</h2>
+    <button id="box-button11" onclick="changeColor11()">Drunk drivers</button>
+    <button id="box-button12" onclick="changeColor12()">Lange stænger</button>
+    <button id="box-button13" onclick="changeColor13()">Køllerne</button>
+    <button id="box-button14" onclick="changeColor14()">Boldhenterne</button>
+    <button id="box-button15" onclick="changeColor15()">Plæneklipperne</button>
+    <button id="box-button16" onclick="changeColor16()">Kasket-karlene</button>
+    <button id="box-button17" onclick="changeColor17()">Golf med Rolf</button>
+    <button id="box-button18" onclick="changeColor18()">De bagkloge</button>
+    <button id="box-button19" onclick="changeColor19()">Golf-girls</button>
+    <button id="box-button20" onclick="changeColor20()">De 4 musketeer</button>
+  </div></center>
+</section>
+
+<center><div class="booking">
+<button id="confirm-button">Bekræft booking</button>
+<p id="invisible" class="hide">Booking bekræftet!</p>
+</div></center>
+
+
+<br>
+
+<footer>
+  <div class="footer row">
+     <section class="kontakttext col-4">
+         <p>Kontakt os:</p>
+         <p><a href="mailto:golfacross@gmail.com"> Mail: golfacross@gmail.com </a></p>
+         <p><a href="tel:49392039">Tlf.: +45 49 39 20 39</a></p>
+     </section>
+ 
+     <section class="col-3">
+         <img class="socials" src="Images/socials.png" alt="socials">
+     </section>
+ 
+     <section class="col-4">
+         <img id="apple" src="Images/apple.png" alt="">
+     </section>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
